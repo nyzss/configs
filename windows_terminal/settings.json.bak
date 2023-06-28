@@ -1,31 +1,16 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
             "keys": "ctrl+c"
         },
         {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "nextInOrder"
-            },
-            "keys": "f2"
-        },
-        {
-            "command": "toggleFocusMode",
-            "keys": "ctrl+shift+f"
-        },
-        {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "profile": "nyzs",
                 "split": "auto"
@@ -33,60 +18,49 @@
             "keys": "ctrl+alt+d"
         },
         {
+            "command": "toggleFocusMode",
+            "keys": "ctrl+shift+f"
+        },
+        {
             "command": "paste",
             "keys": "ctrl+v"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "profile": "Tabemono",
                 "split": "auto"
-            }
+            },
+            "keys": "ctrl+alt+f"
         },
         {
             "command": "find",
             "keys": "ctrl+f"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+alt+f"
-        },
-        {
-            "command": "toggleShaderEffects",
-            "keys": "ctrl+alt+shift+\u00fc"
         }
     ],
     "alwaysOnTop": false,
     "alwaysShowNotificationIcon": false,
     "alwaysShowTabs": true,
-    "centerOnLaunch": true,
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "experimental.rendering.software": false,
-    "firstWindowPreference": "persistedWindowLayout",
+    "experimental.rendering.software": true,
     "focusFollowMouse": false,
     "initialCols": 150,
-    "initialPosition": ",",
     "initialRows": 30,
-    "launchMode": "focus",
-    "newTabMenu": 
-    [
+    "launchMode": "default",
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "backgroundImageOpacity": 0.1,
             "backgroundImageStretchMode": "fill",
             "colorScheme": "One Half Dark",
             "cursorShape": "filledBox",
-            "font": 
-            {
+            "font": {
                 "face": "Fira Code",
                 "size": 12.0,
                 "weight": "extra-bold"
@@ -95,8 +69,7 @@
             "startingDirectory": "%__CD__%",
             "useAcrylic": true
         },
-        "list": 
-        [
+        "list": [
             {
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": true,
@@ -104,8 +77,7 @@
                 "tabTitle": "nyzs"
             },
             {
-                "font": 
-                {
+                "font": {
                     "size": 10.0
                 },
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
@@ -125,56 +97,49 @@
                 "backgroundImage": "C:\\Users\\OkanT\\Pictures\\kantai.jpg",
                 "backgroundImageOpacity": 0.0,
                 "backgroundImageStretchMode": "uniformToFill",
-                "bellStyle": 
-                [
+                "bellStyle": [
                     "window",
                     "taskbar"
                 ],
                 "closeOnExit": "always",
-                "colorScheme": "Tomorrow Night Burns",
-                "commandline": "C:\\Program Files\\WindowsApps\\Microsoft.PowerShellPreview_7.4.3.0_x64__8wekyb3d8bbwe\\pwsh.exe /nologo",
+                "colorScheme": "Vitesse Dark",
+                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe /nologo",
                 "cursorShape": "filledBox",
                 "experimental.retroTerminalEffect": false,
-                "font": 
-                {
-                    "face": "VictorMono Nerd Font",
-                    "size": 13.0,
-                    "weight": "normal"
+                "font": {
+                    "face": "Iosevka Nerd Font Mono",
+                    "size": 14.0,
+                    "weight": "semi-bold"
                 },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
-                "historySize": 10000,
                 "icon": "C:\\Users\\OkanT\\Pictures\\Saved Pictures\\icons\\koi-fish.png",
                 "intenseTextStyle": "bright",
                 "name": "nyzs",
-                "opacity": 97,
-                "padding": "2",
+                "opacity": 95,
+                "padding": "0, 0, 0, 0",
                 "scrollbarState": "hidden",
                 "source": "Windows.Terminal.PowershellCore",
                 "startingDirectory": "C:\\Users\\OkanT\\Desktop",
                 "suppressApplicationTitle": false,
                 "tabTitle": "nyzs",
-                "unfocusedAppearance": 
-                {
-                    "adjustIndistinguishableColors": "indexed",
-                    "colorScheme": "Tomorrow Night Burns",
+                "unfocusedAppearance": {
+                    "adjustIndistinguishableColors": "never",
                     "experimental.retroTerminalEffect": false,
                     "intenseTextStyle": "all"
                 },
-                "useAcrylic": false
+                "useAcrylic": true
             },
             {
                 "backgroundImageOpacity": 0.15,
-                "bellStyle": 
-                [
+                "bellStyle": [
                     "window",
                     "taskbar"
                 ],
                 "colorScheme": "Horizon",
                 "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
                 "cursorShape": "filledBox",
-                "font": 
-                {
+                "font": {
                     "face": "RobotoMono NF",
                     "size": 13.0,
                     "weight": "medium"
@@ -190,8 +155,7 @@
             {
                 "antialiasingMode": "grayscale",
                 "backgroundImageOpacity": 0.15,
-                "bellStyle": 
-                [
+                "bellStyle": [
                     "window",
                     "taskbar"
                 ],
@@ -199,8 +163,7 @@
                 "commandline": "C:\\Windows\\System32\\wsl.exe",
                 "cursorShape": "filledBox",
                 "experimental.retroTerminalEffect": true,
-                "font": 
-                {
+                "font": {
                     "face": "JetBrainsMono NF",
                     "size": 14.0,
                     "weight": "medium"
@@ -262,23 +225,10 @@
                 "hidden": false,
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{2595cd9c-8f05-55ff-a1d4-93f3041ca67f}",
-                "hidden": false,
-                "name": "PowerShell Preview (msix)",
-                "source": "Windows.Terminal.PowershellCore"
-            },
-            {
-                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
-                "hidden": false,
-                "name": "Ubuntu",
-                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#090300",
             "black": "#9E180A",
@@ -786,29 +736,6 @@
             "yellow": "#E9B32A"
         },
         {
-            "background": "#1F1F28",
-            "black": "#1F1F28",
-            "blue": "#658594",
-            "brightBlack": "#2A2A37",
-            "brightBlue": "#7FB4CA",
-            "brightCyan": "#A3D4D5",
-            "brightGreen": "#98BB6C",
-            "brightPurple": "#D27E99",
-            "brightRed": "#FF5D62",
-            "brightWhite": "#DCD7BA",
-            "brightYellow": "#E6C384",
-            "cursorColor": "#DCD7BA",
-            "cyan": "#9CABCA",
-            "foreground": "#DCD7BA",
-            "green": "#76946A",
-            "name": "Kanagawa",
-            "purple": "#957FB8",
-            "red": "#E82424",
-            "selectionBackground": "#2A2A37",
-            "white": "#DCD7BA",
-            "yellow": "#FF9E3B"
-        },
-        {
             "background": "#232322",
             "black": "#696969",
             "blue": "#134EB2",
@@ -1246,29 +1173,6 @@
             "yellow": "#C2A86C"
         },
         {
-            "background": "#300A24",
-            "black": "#171421",
-            "blue": "#0037DA",
-            "brightBlack": "#767676",
-            "brightBlue": "#08458F",
-            "brightCyan": "#2C9FB3",
-            "brightGreen": "#26A269",
-            "brightPurple": "#A347BA",
-            "brightRed": "#C01C28",
-            "brightWhite": "#F2F2F2",
-            "brightYellow": "#A2734C",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#3A96DD",
-            "foreground": "#FFFFFF",
-            "green": "#26A269",
-            "name": "Ubuntu-ColorScheme",
-            "purple": "#881798",
-            "red": "#C21A23",
-            "selectionBackground": "#FFFFFF",
-            "white": "#CCCCCC",
-            "yellow": "#A2734C"
-        },
-        {
             "background": "#000000",
             "black": "#000000",
             "blue": "#000080",
@@ -1362,8 +1266,7 @@
         }
     ],
     "showTabsInTitlebar": true,
-    "showTerminalTitleInTitlebar": true,
-    "startOnUserLogin": true,
+    "startOnUserLogin": false,
     "tabWidthMode": "equal",
     "theme": "dark",
     "themes": [],

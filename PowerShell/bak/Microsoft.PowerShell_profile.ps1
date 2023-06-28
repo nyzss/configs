@@ -1,7 +1,5 @@
 
-# oh-my-posh init pwsh  --config 'C:\Users\OkanT\AppData\Local\Programs\oh-my-posh\themes\tokyo.omp.json' | Invoke-Expression
-# oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/kali.omp.json" | Invoke-Expression
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/ys.omp.json" | Invoke-Expression
+oh-my-posh init pwsh  --config 'C:\Users\OkanT\AppData\Local\Programs\oh-my-posh\themes\tokyo.omp.json' | Invoke-Expression
 # Import-Module posh-git
 Import-Module PSReadLine
 Import-Module -Name Terminal-Icons
@@ -24,21 +22,9 @@ Set-Alias pwd lemao
 
 #macchina --------
 #macchina --custom-ascii C:\Users\OkanT\dev\macchina\skull.txt  --palette --custom-ascii-color Cyan --color blue --box-title simba
-#
-#
-# latest:
-# macchina --custom-ascii C:\Users\OkanT\dev\macchina\skull.txt  --palette --custom-ascii-color Cyan --color blue --box-title simba --hide OperatingSystem
-
-function mc {
-macchina --custom-ascii C:\Users\OkanT\dev\macchina\skull.txt --palette --custom-ascii-color Cyan --color blue --box-title simba $args
-	# --hide OperatingSystem
-}
-
-mc
+macchina --custom-ascii C:\Users\OkanT\dev\macchina\skull.txt  --palette --custom-ascii-color Cyan --color blue --box-title simba --hide OperatingSystem
 #macchina --------
 # add the --box-title ikebukuro if you want to
-#
-Invoke-Expression (& { (zoxide init powershell | Out-String) })
 
 function toshokan{ set-location "C:\Users\OkanT\Desktop\toshokan" }
 
@@ -68,8 +54,9 @@ function mkcd {
 	mkdir $args && cd ./$args
 }
 
-function delete {
-	rm -r -fo $args
+function mc {
+macchina --custom-ascii C:\Users\OkanT\dev\macchina\uwu.txt  --palette --custom-ascii-color Cyan --color blue --no-box
+#
 }
 
 $path 			= (Get-Location).Path
