@@ -14,10 +14,11 @@
         {
             "command": 
             {
-                "action": "moveFocus",
-                "direction": "nextInOrder"
+                "action": "splitPane",
+                "profile": "nyzs",
+                "split": "auto"
             },
-            "keys": "f2"
+            "keys": "ctrl+alt+d"
         },
         {
             "command": "toggleFocusMode",
@@ -26,11 +27,10 @@
         {
             "command": 
             {
-                "action": "splitPane",
-                "profile": "nyzs",
-                "split": "auto"
+                "action": "moveFocus",
+                "direction": "nextInOrder"
             },
-            "keys": "ctrl+alt+d"
+            "keys": "f2"
         },
         {
             "command": "paste",
@@ -132,19 +132,19 @@
                 ],
                 "closeOnExit": "always",
                 "colorScheme": "Tomorrow Night Burns",
-                "commandline": "C:\\Program Files\\WindowsApps\\Microsoft.PowerShellPreview_7.4.3.0_x64__8wekyb3d8bbwe\\pwsh.exe /nologo",
+                "commandline": "pwsh /nologo",
                 "cursorShape": "filledBox",
                 "experimental.retroTerminalEffect": false,
                 "font": 
                 {
                     "face": "VictorMono Nerd Font",
-                    "size": 13.0,
-                    "weight": "normal"
+                    "size": 12.0,
+                    "weight": "semi-bold"
                 },
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "historySize": 10000,
-                "icon": "C:\\Users\\OkanT\\Pictures\\Saved Pictures\\icons\\koi-fish.png",
+                "icon": "C:\\Users\\OkanT\\Pictures\\icons\\wave.png",
                 "intenseTextStyle": "bright",
                 "name": "nyzs",
                 "opacity": 97,
@@ -162,118 +162,6 @@
                     "intenseTextStyle": "all"
                 },
                 "useAcrylic": false
-            },
-            {
-                "backgroundImageOpacity": 0.15,
-                "bellStyle": 
-                [
-                    "window",
-                    "taskbar"
-                ],
-                "colorScheme": "Horizon",
-                "commandline": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
-                "cursorShape": "filledBox",
-                "font": 
-                {
-                    "face": "RobotoMono NF",
-                    "size": 13.0,
-                    "weight": "medium"
-                },
-                "guid": "{bb03c544-d80d-5f06-a221-c32144b6a28e}",
-                "hidden": true,
-                "icon": "C:\\Users\\OkanT\\Pictures\\Saved Pictures\\torii-gate.png",
-                "name": "Keikaku",
-                "opacity": 75,
-                "padding": "0",
-                "startingDirectory": "C:\\Users\\OkanT\\Desktop\\code"
-            },
-            {
-                "antialiasingMode": "grayscale",
-                "backgroundImageOpacity": 0.15,
-                "bellStyle": 
-                [
-                    "window",
-                    "taskbar"
-                ],
-                "colorScheme": "OneDark",
-                "commandline": "C:\\Windows\\System32\\wsl.exe",
-                "cursorShape": "filledBox",
-                "experimental.retroTerminalEffect": true,
-                "font": 
-                {
-                    "face": "JetBrainsMono NF",
-                    "size": 14.0,
-                    "weight": "medium"
-                },
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "hidden": false,
-                "icon": "C:\\Users\\OkanT\\Pictures\\Saved Pictures\\icons\\koi-fish.png",
-                "name": "Tabemono",
-                "opacity": 79,
-                "padding": "6",
-                "source": "Windows.Terminal.Wsl",
-                "startingDirectory": "C:\\Users\\OkanT\\Desktop",
-                "tabTitle": "Tabemono"
-            },
-            {
-                "guid": "{a5a97cb8-8961-5535-816d-772efe0c6a3f}",
-                "hidden": false,
-                "name": "Arch",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "guid": "{16208362-94fc-5b1f-a491-5b2624d5ab56}",
-                "hidden": true,
-                "name": "Visual Studio Debug Console",
-                "source": "VSDebugConsole"
-            },
-            {
-                "guid": "{9a110cc2-dc20-575c-bffb-aced52994291}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{f0e5ac1b-b75a-54a2-ab98-b51be2dfb058}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{0afd51dc-b2f2-5871-8935-8432c728b54f}",
-                "hidden": true,
-                "name": "Developer Command Prompt for VS 2019",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{50492858-f4b6-5e1c-b894-2a96df44c40d}",
-                "hidden": true,
-                "name": "Developer PowerShell for VS 2019",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{3e7a37cc-7621-5b88-9800-75e0920d8d87}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{48a060c1-78af-5c5a-ab02-bce967fe0733}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{2595cd9c-8f05-55ff-a1d4-93f3041ca67f}",
-                "hidden": false,
-                "name": "PowerShell Preview (msix)",
-                "source": "Windows.Terminal.PowershellCore"
-            },
-            {
-                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
-                "hidden": false,
-                "name": "Ubuntu",
-                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             }
         ]
     },

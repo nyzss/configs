@@ -1,6 +1,6 @@
 gaps:
   inner_gap: 15
-  outer_gap: 15
+  outer_gap: 20
 
 general:
   # Whether to show floating windows as always on top.
@@ -44,7 +44,7 @@ bar:
       padding: "0 8px"
       label_draining: "{battery_level}% remaining"
       label_power_saver: "{battery_level}% (power saver)"
-      label_charging: "{battery_level}% (charging)"
+      label_charging: "{battery_level}% 🔋"
     - type: "clock"
       # Documentation on formatting date/time string:
       # https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
@@ -55,9 +55,9 @@ bar:
 
 workspaces:
   - name: "1"
-    display_name: "main"
+    display_name: "1"
   - name: "2"
-    display_name: "dev"
+    display_name: "2"
   - name: "3"
   - name: "4"
   - name: "5"

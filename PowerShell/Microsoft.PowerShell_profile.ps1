@@ -1,13 +1,19 @@
 
 # oh-my-posh init pwsh  --config 'C:\Users\OkanT\AppData\Local\Programs\oh-my-posh\themes\tokyo.omp.json' | Invoke-Expression
 # oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/kali.omp.json" | Invoke-Expression
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/ys.omp.json" | Invoke-Expression
+#oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/ys.omp.json" | Invoke-Expression
 # Import-Module posh-git
-Import-Module PSReadLine
-Import-Module -Name Terminal-Icons
+#Import-Module PSReadLine
+#Import-Module -Name Terminal-Icons
 # Set-PoshPrompt ys
 # Set-PoshPrompt 1_shell
-Set-PSReadLineOption -PredictionSource History
+#Set-PSReadLineOption -PredictionSource History
+
+Invoke-Expression (&starship init powershell)
+$ENV:STARSHIP_CONFIG = "$HOME\.config\starship\bracketed-segments.toml"
+macchina
+#
+# fnm env --use-on-cd | Out-String | Invoke-Expression
 
 Set-Alias which where.exe
 Set-Alias touch New-Item
@@ -17,9 +23,9 @@ Set-Alias ex iex.bat
 
 Set-Alias vim nvim
 
-Set-Alias rename Rename-Item
+#Set-Alias rename Rename-Item
 
-Set-Alias pwd lemao
+#Set-Alias pwd lemao
 
 
 #macchina --------
@@ -30,15 +36,15 @@ Set-Alias pwd lemao
 # macchina --custom-ascii C:\Users\OkanT\dev\macchina\skull.txt  --palette --custom-ascii-color Cyan --color blue --box-title simba --hide OperatingSystem
 
 function mc {
-macchina --custom-ascii C:\Users\OkanT\dev\macchina\skull.txt --palette --custom-ascii-color Cyan --color blue --box-title simba $args
+macchina --custom-ascii C:\Users\OkanT\Desktop\dev\configs\ascii\skull.txt --palette --custom-ascii-color Cyan --color blue --box-title simba $args
 	# --hide OperatingSystem
 }
 
-mc
+# mc
 #macchina --------
 # add the --box-title ikebukuro if you want to
 #
-Invoke-Expression (& { (zoxide init powershell | Out-String) })
+#Invoke-Expression (& { (zoxide init powershell | Out-String) })
 
 function toshokan{ set-location "C:\Users\OkanT\Desktop\toshokan" }
 
@@ -52,14 +58,11 @@ function lemao {
 
 
 function dev {
-	Set-Location "C:\Users\OkanT\Desktop\dev\web-dev"
+	Set-Location "C:\Users\OkanT\Desktop\dev"
 }
 
 # function build{ cmake -G "MinGW Makefiles" $args }
 
-function re {
-	clear && &$PROFILE
-}
 function cl {
 		clear && &$PROFILE
 	}
